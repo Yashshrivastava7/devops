@@ -1,0 +1,412 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta content="width=device-width, initial-scale=1" name="viewport" />
+    <title></title>
+
+    <!---font awesome style--->
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400;800&family=Roboto:wght@100;300;400;500&family=Ubuntu:ital,wght@0,300;1,300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css" integrity="sha512-YWzhKL2whUzgiheMoBFwW8CKV4qpHQAEuvilg9FAn5VJUDwKZZxkJNuGM4XkWuk94WCrrwslk8yWNGmY1EduTA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!--css file link-->
+    <link rel="stylesheet" href="css/styles.css">
+
+  </head>
+
+  <body>
+    <!--header section --->
+    <header>
+      <div id="menu-bar" class="fa fa-bars"></div>
+
+      <a href="#" class="logo"><span>A</span>DVENTOUR</a>
+
+      <nav class="navbar">
+        <a href="#home">home</a>
+        <a href="#book">book</a>
+        <a href="#packages">packages</a>
+        <a href="#services">services</a>
+        <a href="#contact">contact</a>
+     </nav>
+        <div class="icon">
+          <i class="fas fa-search" id="serach-btn"></i>
+          <i class="fas fa-user" id="login-btn"></i>
+        </div>
+        <form class="search-bar-container" action="">
+          <input type="search" id="search-bar" placeholder="Search here ...">
+          <label for="search-bar" class="fas fa-search"></label>
+        </form>
+    </header>
+
+    <!--- login section ---->
+
+    <div class="login-form-container">
+     <i class="fa fa-times" id="form-close"></i>
+
+      <form action="/login" method="POST">
+        <h3>Welcome</h3>
+        <input type="email" class="box" name="username" placeholder="Enter your email">
+        <input type="password" class="box"name="password" placeholder="Password">
+        <input type="submit" value="Login" class="btn">
+        <p>forget password? <a href="#">click here</a></p>
+        <p>don't have account? <a href="signup/public/signup.html">Register now</a></p>
+      </form>
+    </div>
+
+    <!---home section start --->
+
+    <section class="home" id="home">
+      <div class="content">
+        <h3>adventure is a worthwhile</h3>
+        <p>discover new places in Karnataka with us,adventure awaits</p>
+        <a href="#packages" class="btn">discover more places</a>
+      </div>
+
+      <div class="controls">
+        <span class="vid-btn active" data-src="img/vid-2.mp4"></span>
+        <span class="vid-btn" data-src="img/vid-2.mp4"></span>
+        <span class="vid-btn" data-src="img/vid-1.mp4"></span>
+        <span class="vid-btn" data-src="img/vid-4.mp4"></span>
+
+      </div>
+
+      <div class="video-container">
+
+        <video src="img/vid-2.mp4" id="video-slider" loop autoplay muted>
+
+        </video>
+      </div>
+
+
+
+    </section>
+
+    <!---booking section starts --->
+
+    <section class="book" id="book">
+
+        <h1 class="heading">
+            <span>B</span>
+            <span>O</span>
+            <span>O</span>
+            <span>K</span>
+            <span class="space"></span>
+            <span>n</span>
+            <span>o</span>
+            <span>w</span>
+        </h1>
+
+        <div class="row">
+
+            <div class="image">
+                <img src="img/img-4.jpg" alt="">
+            </div>
+
+            <form action="">
+                <div class="inputBox">
+                    <h3>from</h3>
+                    <input type="text" placeholder="place name">
+                </div>
+                <div class="inputBox">
+                    <h3>To</h3>
+                    <input type="text" placeholder="place name">
+                </div>
+                <div class="inputBox">
+                    <h3>how many</h3>
+                    <input type="number" placeholder="number of guests">
+                </div>
+                <div class="inputBox">
+                    <h3>arrivals</h3>
+                    <input type="date">
+                </div>
+                <div class="inputBox">
+                    <h3>leaving</h3>
+                    <input type="date">
+                </div>
+                <input type="submit" class="btn" value="book now">
+            </form>
+
+        </div>
+
+    </section>
+
+    <!--booking section ends --->
+
+    <!---packages section starts --->
+
+    <section class="packages" id="packages">
+
+        <h1 class="heading">
+            <span>p</span>
+            <span>a</span>
+            <span>c</span>
+            <span>k</span>
+            <span>a</span>
+            <span>g</span>
+            <span>e</span>
+            <span>s</span>
+        </h1>
+
+        <div class="box-container">
+
+            <div class="box">
+                <img src="img/bidar district.jpg" alt="">
+                <div class="content">
+                    <h3> <i class="fas fa-map-marker-alt"></i> Bidar district</h3>
+                    <p>Bidar Fort is a fort at Bidar, Karnataka, India.The fort, the city and the district are all affixed with the name Bidar.</p>
+                      <div class="stars" data-rating="3">
+                        <span class="star">&nbsp;</span>
+                        <span class="star">&nbsp;</span>
+                        <span class="star">&nbsp;</span>
+                        <span class="star">&nbsp;</span>
+                        <span class="star">&nbsp;</span>
+                      </div>
+                    <div class="price"> $190.00 <span>$220.00</span> </div>
+                    <a href="#" class="btn">book now</a>
+                </div>
+            </div>
+
+            <div class="box">
+                <img src="img/Coorg(kodagu).jpg" alt="">
+                <div class="content">
+                    <h3> <i class="fas fa-map-marker-alt"></i> Coorg(kodagu) </h3>
+                    <p>Coorg, officially called Kodagu, is the most sought after and popular hill station of Karnataka
+                    The best time to visit Kodagu is between October to May and the peak season for this hill station is within February to May</p>
+                    <div class="stars" data-rating="3">
+                        <span class="star">&nbsp;</span>
+                        <span class="star">&nbsp;</span>
+                        <span class="star">&nbsp;</span>
+                        <span class="star">&nbsp;</span>
+                        <span class="star">&nbsp;</span>
+                    </div>
+                    <div class="price"> $190.00 <span>$220.00</span> </div>
+                    <a href="#" class="btn">book now</a>
+                </div>
+            </div>
+
+            <div class="box">
+                <img src="img/vijyanagra district.jpg" alt="">
+                <div class="content">
+                    <h3> <i class="fas fa-map-marker-alt"></i> vijyanagra district </h3>
+                    <p>Hampi or Hampe, also referred to as the Group of Monuments at Hampi,
+                       is a UNESCO World Heritage Site located in east-central Karnataka, India.
+                        Hampi was the capital of the Vijayanagara Empire in the 14th century</p>
+                        <div class="stars" data-rating="3">
+                            <span class="star">&nbsp;</span>
+                            <span class="star">&nbsp;</span>
+                            <span class="star">&nbsp;</span>
+                            <span class="star">&nbsp;</span>
+                            <span class="star">&nbsp;</span>
+                        </div>
+                    <div class="price"> $190.00 <span>$220.00</span> </div>
+                    <a href="#" class="btn">book now</a>
+                </div>
+            </div>
+
+            <div class="box">
+                <img src="img/shivmoga disctrict.jpg" alt="">
+                <div class="content">
+                    <h3> <i class="fas fa-map-marker-alt"></i> shivmoga district </h3>
+                    <p>Jog Falls is a waterfall on the Sharavati river located in the Western Ghats
+                      near Sagar Taluk of Shivamogga District, Karnataka, India. It is the second highest
+                       plunge waterfall in India</p>
+                       <div class="stars" data-rating="3">
+                           <span class="star">&nbsp;</span>
+                           <span class="star">&nbsp;</span>
+                           <span class="star">&nbsp;</span>
+                           <span class="star">&nbsp;</span>
+                           <span class="star">&nbsp;</span>
+                       </div>
+                    <div class="price"> $190.00 <span>$220.00</span> </div>
+                    <a href="#" class="btn">book now</a>
+                </div>
+            </div>
+
+            <div class="box">
+                <img src="img/badami bagalkort.jpg" alt="">
+                <div class="content">
+                    <h3> <i class="fas fa-map-marker-alt"></i>badami bagalkort </h3>
+                    <p>The Badami cave temples are a complex of Hindu and Jain cave temples located in Badami,
+                       a town in the Bagalkot district in northern part of Karnataka, India. The caves are important examples of Indian rock-cut architecture</p>
+                       <div class="stars" data-rating="3">
+                           <span class="star">&nbsp;</span>
+                           <span class="star">&nbsp;</span>
+                           <span class="star">&nbsp;</span>
+                           <span class="star">&nbsp;</span>
+                           <span class="star">&nbsp;</span>
+                       </div>
+                    <div class="price"> $190.00 <span>$220.00</span> </div>
+                    <a href="#" class="btn">book now</a>
+                </div>
+            </div>
+
+            <div class="box">
+                <img src="img/mysore palace.png" alt="">
+                <div class="content">
+                    <h3> <i class="fas fa-map-marker-alt"></i> Mysore Palace </h3>
+                    <p>The second most famous attraction in India.the Palace is, in fact,
+                      an exemplary showcase of Indo-Saracenic architecture with a blend of Gothic,
+                      Rajput, Hindu and Muslim styles and it is one of the famous places to visit in Mysore.</p>
+                      <div class="stars" data-rating="3">
+                          <span class="star">&nbsp;</span>
+                          <span class="star">&nbsp;</span>
+                          <span class="star">&nbsp;</span>
+                          <span class="star">&nbsp;</span>
+                          <span class="star">&nbsp;</span>
+                      </div>
+                    <div class="price"> $190.00 <span>$220.00</span> </div>
+                    <a href="#" class="btn">book now</a>
+                </div>
+            </div>
+
+        </div>
+
+    </section>
+
+    <!---packages section ends --->
+    <!--service section starts-->
+    <section class="services" id="services">
+
+        <h1 class="heading">
+            <span>s</span>
+            <span>e</span>
+            <span>r</span>
+            <span>v</span>
+            <span>i</span>
+            <span>c</span>
+            <span>e</span>
+            <span>s</span>
+        </h1>
+
+        <div class="box-container">
+
+            <div class="box">
+                <i class="fas fa-hotel"></i>
+                <h3>affordable hotels</h3>
+                <p></p>
+              </div>
+            <div class="box">
+                <i class="fas fa-utensils"></i>
+                <h3>food and drinks</h3>
+                <p> </p>
+            </div>
+            <div class="box">
+                <i class="fas fa-bullhorn"></i>
+                <h3>safty guide</h3>
+                 <p> </p>
+                </div>
+            <div class="box">
+                <i class="fas fa-globe-asia"></i>
+                <h3>around the Karnataka</h3>
+                <p> </p>
+                </div>
+            <div class="box">
+                <i class="fas fa-plane"></i>
+                <h3>fastest travel</h3>
+                <p> </p>
+                </div>
+            <div class="box">
+                <i class="fas fa-hiking"></i>
+                <h3>adventures</h3>
+                <p> </p>
+                </div>
+
+        </div>
+
+    </section>
+
+    <!-- services section ends -->
+    <!-- contact section starts -->
+    <section class="contact" id="contact">
+
+        <h1 class="heading">
+            <span>C</span>
+            <span>o</span>
+            <span>n</span>
+            <span>t</span>
+            <span>a</span>
+            <span>c</span>
+            <span>t</span>
+            <span class="space"></span>
+            <span>U</span>
+            <span>s</span>
+        </h1>
+
+        <div class="row">
+
+            <div class="image">
+                <img src="img/img-1.png" alt="">
+            </div>
+
+            <form action="">
+                <div class="inputBox">
+                    <input type="text" placeholder="Name">
+                    <input type="email" placeholder="Email">
+                </div>
+                <div class="inputBox">
+                    <input type="number" placeholder="Contact no.">
+                    <input type="text" placeholder="Subject">
+                </div>
+                <textarea placeholder="Message" name="" id="" cols="30" rows="10"></textarea>
+                <input type="submit" class="btn" value="send message">
+            </form>
+
+        </div>
+
+    </section>
+
+  <!-- contact section ends -->
+
+  <!-- footer section starts  -->
+
+  <section class="footer">
+
+      <div class="box-container">
+
+          <div class="box">
+              <h3>about us</h3>
+              <p>.</p>
+          </div>
+          <div class="box">
+              <h3>branch locations</h3>
+              <a href="#">Delhi</a>
+              <a href="#">Patna</a>
+              <a href="#">Raipur</a>
+              <a href="#">Mumbai</a>
+          </div>
+          <div class="box">
+              <h3>quick links</h3>
+              <a href="#home">home</a>
+              <a href="#book">book</a>
+              <a href="#packages">packages</a>
+              <a href="#services">services</a>
+              <a href="#contact">contact</a>
+          </div>
+          <div class="box">
+              <h3>follow us</h3>
+              <a href="#">facebook</a>
+              <a href="#">instagram</a>
+              <a href="#">twitter</a>
+              <a href="#">linkedin</a>
+          </div>
+
+      </div>
+
+      <h1 class="credit"> <span>© 2021 Karnataka Tourism</span> | all rights reserved! </h1>
+
+  </section>
+
+
+<!-- footer section ends -->
+
+
+
+
+
+    <!--custom js file link-->
+    <script src="index.js" charset="utf-8"></script>
+  </body>
+</html>
